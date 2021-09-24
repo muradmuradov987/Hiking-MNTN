@@ -1,0 +1,135 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/img/main-photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.342);
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+
+    nav {
+      width: 100%;
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      .logo {
+        text-align: center;
+        cursor: pointer;
+        img {
+          width: 70px;
+        }
+      }
+
+      ul {
+        display: flex;
+        li {
+          margin: 0 15px;
+          cursor: pointer;
+          font-size: 18px;
+          &:hover {
+            color: $accent;
+          }
+        }
+        
+      }
+      .account {
+        margin: 0 15px;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover {
+          color: $accent;
+        }
+      }
+      .bar-menu{
+        display: none;
+      }
+    
+
+    }
+
+    
+    .main-content {
+      width: 100%;
+      height: 300px;
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 50;
+      .social-net {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        color: white;
+        z-index: 50;
+        right: 0;
+        .vertical {
+          writing-mode: vertical-rl;
+        }
+        i {
+          margin: 10px 0;
+          cursor: pointer;
+          z-index: 20;
+        }
+      }
+      .main-text {
+        width: 100%;
+        z-index: 20;
+        position: absolute;
+        text-align: center;
+        p {
+          font-size: 16px;
+          color: $accent;
+          letter-spacing: 5px;
+          margin-bottom: 50px;
+          
+        }
+        h1 {
+          font-size: 70px;
+          color: white;
+          margin: 0 0 15px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        color: white;
+        font-size: 18px;
+        z-index: 100;
+        a {
+          text-decoration: none;
+        }
+        li {
+          color: white;
+          list-style: none;
+          margin: 15px 0;
+          &:hover{
+            color: $accent;
+          }
+        }
+      }
+    }
+    }
+}
+.overlay2 {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  bottom: 0;
+  background: linear-gradient(to top, #0b1d26 5%, rgba(11, 29, 38, 0) 100%);
+}
+

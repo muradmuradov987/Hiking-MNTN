@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import "./variable";
+@import "./reset";
+@import "./header";
+@import "./main";
+@import "./footer";
+@import "./mobile";
+@import "./ipad";
+
+
+*{
+    font-family: $myFont;
+    scroll-behavior: smooth;
+   
+}
+
+body{
+    background-color: $bg-clr;
+}

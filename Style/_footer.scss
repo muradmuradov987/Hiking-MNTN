@@ -1,0 +1,45 @@
+footer {
+  width: 100%;
+  display: flex;
+  padding-bottom: 70px;
+  .footer-info1 {
+    width: 60%;
+    color: white;
+    position: relative;
+    .logo {
+      cursor: pointer;
+      img {
+        width: 70px;
+      }
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    p {
+      line-height: 25px;
+    }
+    span {
+      position: absolute;
+      bottom: 0;
+      color: rgba(128, 128, 128, 0.719);
+    }
+  }
+  .footer-info2 {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    span {
+      color: $accent;
+      font-size: 18px;
+    }
+    p {
+      color: white;
+      margin-top: 20px;
+      cursor: pointer;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}
